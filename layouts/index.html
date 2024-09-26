@@ -1,10 +1,7 @@
 {{ define "head" }}
-	{{ if .Site.Params.bgImg -}}
-	<style>.bg-img {background-image: url('{{.Site.Params.bgImg}}');}</style>
-	{{- else if .Site.Params.images -}}
-		{{- range first 1 .Site.Params.images -}}
-		<style>.bg-img {background-image: url('{{. | absURL}}');}</style>
-		{{- end -}}
+	{{ if .Site.Params.wave -}}
+	<script src="/js/wave_animation_professional.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="css/wave_animation_professional.css">
 	{{- end -}}
 {{ end }}
 
@@ -12,7 +9,6 @@
 	{{- if (or .Site.Params.images .Site.Params.bgImg) }}
 	<div class="bg-img"></div>
 	{{- end }}
-	<canvas id="waveCanvas"></canvas>
 
 	<div id="spotlight" class="animated fadeIn">
 		<div id="home-center">
@@ -29,6 +25,7 @@
 				{{ partialCached "menu.html" . }}
 			</nav>
 		</div>
+		<canvas id="waveCanvas"></canvas>
 		<div id="home-footer">{{ partialCached "single-footer.html" . }}</div>
 	</div>
 {{ end }}
