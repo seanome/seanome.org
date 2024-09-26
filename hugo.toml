@@ -1,0 +1,24 @@
+baseURL = 'https://seanome.org/'
+languageCode = 'en-us'
+title = 'Seanome'
+theme = 'hermit-v2'
+[params]
+  homeSubtitle = "Unlocking cures from ocean biodiversity with open genomics tools"
+  homeSubtitlePrinter = true
+  [params.contact]
+    email = 'info@seanome.org'
+  custom_js = ["wave_animation_professional.js"]
+  custom_css = ["scss/google-fonts.scss", "wave_animation_professional.css", ]
+  google_fonts = [
+    ["Poppins", "400, 700"],
+  ]
+  heading_font = "Poppins"
+  body_font = "Poppins"
+
+
+features = [
+  "single column",
+  "social icons",
+  "google analytics",
+  "customizable"
+]
