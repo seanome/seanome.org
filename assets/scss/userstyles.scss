@@ -1,14 +1,14 @@
 // /* Use the font config as variables in your SCSS */
 // // from https://gist.github.com/jeremybise/a6afea2d4c7f9044180ffeb663a617cf
 
-// $font-heading: {{ $.Site.Params.heading_font | default "'Poppins', sans-serif" }};
-// $font-body: {{ $.Site.Params.body_font | default "'Poppins', sans-serif" }};
+$font-heading: 'Poppins', sans-serif;
+$font-body: 'Poppins', sans-serif ;
 
-// body {
-//   font-family: $font-body;
-// }
+body {
+  font-family: $font-body;
+}
 
-// h1, h2, h3, h4, h5, h6 {
-//  font-family: $font-heading; 
-// }
+h1, h2, h3, h4, h5, h6 {
+ font-family: $font-heading; 
+}
 

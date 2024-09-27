@@ -10,9 +10,10 @@ theme = 'hermit-v2'
   custom_css = ["scss/userstyles.scss"]
   google_fonts = [
     ["Poppins", "400, 700"],
+    ["Lato", "400, 700"],
+    ["Josefin Sans", "400, 700"],
   ]
-  heading_font = "Poppins"
-  body_font = "Poppins"
+
 
 
 [params.author]
