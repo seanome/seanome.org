@@ -3,17 +3,20 @@
     --text-color: #2f2f2f;
     --accent-color: #3a86ff;
     --secondary-color: #8ecae6;
+    --toggle-color: #a1a1a1;
 }
 
 .light-mode {
     --bg-color: #ffffff;
-    --text-color: #2f2f2f;
+    --text-color: #575757;
+    --toggle-color: #a1a1a1;
     --accent-color: #3a86ff;
     --secondary-color: #8ecae6;
 }
 .dark-mode {
     --bg-color: #1a1a1a;
     --text-color: #efefef;
+    --toggle-color: #aeaeae;
     --accent-color: #64dfdf;
     --secondary-color: #48bfe3;
 }
@@ -75,7 +78,7 @@ body, html {
     height: 50px;
     border-radius: 50%;
     background-color: var(--bg-color);
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--toggle-color);
     cursor: pointer;
     transition: all 0.3s ease;
     display: flex;

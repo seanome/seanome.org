@@ -22,6 +22,10 @@ document.addEventListener('DOMContentLoaded', function () {
         wave.y = canvas.height / 2;
     }
 
+    function getCSSVariable(variableName) {
+        return getComputedStyle(document.documentElement).getPropertyValue(variableName).trim();
+    }
+
     function drawWave() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -36,8 +40,9 @@ document.addEventListener('DOMContentLoaded', function () {
         ctx.closePath();
 
         const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-        gradient.addColorStop(0, getComputedStyle(document.documentElement).getPropertyValue('--wave-color-1'));
-        gradient.addColorStop(1, getComputedStyle(document.documentElement).getPropertyValue('--wave-color-2'));        ctx.fillStyle = gradient;
+        gradient.addColorStop(0, getCSSVariable('--accent-color'));
+        gradient.addColorStop(1, getCSSVariable('--secondary-color'));
+        ctx.fillStyle = gradient;
         ctx.fill();
     }
 
@@ -54,16 +59,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function updateMode() {
         if (isDarkMode) {
-            document.documentElement.style.setProperty('--bg-color', '#000000');
-            document.documentElement.style.setProperty('--text-color', '#ffffff');
-            document.documentElement.style.setProperty('--wave-color-1', '#64dfdf');
-            document.documentElement.style.setProperty('--wave-color-2', '#48bfe3');
+            body.classList.remove('light-mode');
+            body.classList.add('dark-mode');
             modeToggle.innerHTML = '🌙';
         } else {
-            document.documentElement.style.setProperty('--bg-color', '#ffffff');
-            document.documentElement.style.setProperty('--text-color', '#000000');
-            document.documentElement.style.setProperty('--wave-color-1', '#3a86ff');
-            document.documentElement.style.setProperty('--wave-color-2', '#8ecae6');
+            body.classList.remove('dark-mode');
+            body.classList.add('light-mode');
             modeToggle.innerHTML = '☀️';
         }
     }
@@ -84,6 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Initial setup
     isDarkMode = colorSchemeQuery.matches;
+    body.classList.add(isDarkMode ? 'dark-mode' : 'light-mode');
     resizeCanvas();
     updateMode();
     animate();

@@ -20,8 +20,8 @@
 <link rel="stylesheet preload prefetch" as="style" href="{{ $c_css.Permalink }}" {{ printf "integrity=%q" $c_css.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous">
 {{- end -}}
 {{- block "head" . -}}{{- end -}}
-{{ partial "google-fonts" . }}
 {{- if templates.Exists "partials/extra-head.html" -}}{{- partial "extra-head.html" . -}}{{- end -}}
+{{ partial "google-fonts" . }}
 </head>
 <body id="page">
 {{- if .Site.Params.googleTagManager -}}{{- partial "googleTagManager_body.html" . -}}{{- end -}}
