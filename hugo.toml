@@ -13,8 +13,10 @@ theme = 'hermit-v2'
   ]
   heading_font = "Poppins"
   body_font = "Poppins"
-  wave = true
 
+
+[params.author]
+  name = "Seanome"
 
 features = [
   "single column",
