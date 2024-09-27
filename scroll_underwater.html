@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seanome</title>
+    <style>
+        body, html { 
+            margin: 0; 
+            padding: 0;
+            font-family: Arial, sans-serif; 
+            height: 100%;
+            overflow-x: hidden;
+        }
+        #content {
+            position: relative;
+            min-height: 300vh;
+            background: linear-gradient(to bottom, #87CEEB, #0077BE, #003366);
+            transition: background 0.3s;
+        }
+        canvas { 
+            display: block; 
+            position: fixed; 
+            bottom: 0; 
+            z-index: 1;
+        }
+        #modeToggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            z-index: 10;
+        }
+        #modeToggle:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        #title {
+            position: fixed;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 4em;
+            font-weight: bold;
+            transition: color 0.3s;
+            text-align: center;
+            z-index: 2;
+        }
+        #tagline {
+            position: fixed;
+            top: calc(40% + 2em);
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.2em;
+            text-align: center;
+            max-width: 80%;
+            transition: color 0.3s;
+            z-index: 2;
+        }
+        #scrollContent {
+            position: relative;
+            padding-top: 100vh;
+            color: white;
+            z-index: 2;
+        }
+        .section {
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .bubble {
+            position: fixed;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            animation: rise 15s infinite;
+            z-index: 1;
+        }
+        @keyframes rise {
+            0% {
+                transform: translateY(100vh) scale(0);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) scale(1);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <canvas id="waveCanvas"></canvas>
+        <button id="modeToggle">Switch to Dark Mode</button>
+        <div id="title">Seanome</div>
+        <div id="tagline">Unlocking cures from ocean biodiversity with open genomics tools</div>
+        <div id="scrollContent">
+            <div class="section">
+                <h2>Problem & Opportunity</h2>
+                <ul>
+                    <li>We've tapped <1% of Earth's genes for medicines, leaving billions unexplored – mostly in our oceans</li>
+                    <li>Ocean life could lead to breakthrough treatments, e.g., Arctic clams' tolerance to nerve toxins could disrupt $60B+ neurological disorder market (projected to reach $88B+ by 2031, CAGR 4.9%)</li>
+                    <li>No incentives exist for creating public-good platforms to analyze ocean species' genomes at scale</li>
+                </ul>
+            </div>
+            <!-- Add more sections here for the rest of the content -->
+        </div>
+    </div>
+    <script>
+        const canvas = document.getElementById('waveCanvas');
+        const ctx = canvas.getContext('2d');
+        const modeToggle = document.getElementById('modeToggle');
+        const title = document.getElementById('title');
+        const tagline = document.getElementById('tagline');
+        const content = document.getElementById('content');
+
+        let time = 0;
+        let isDarkMode = false;
+        const wave = {
+            y: 0,
+            length: 0.01,
+            amplitude: 20,
+            frequency: 0.005
+        };
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight / 3;
+            wave.y = canvas.height / 2;
+        }
+
+        function getGradient(t, isDark) {
+            if (isDark) {
+                const r = Math.sin(0.3 * t) * 20 + 30;
+                const g = Math.sin(0.3 * t + 2) * 20 + 50;
+                const b = Math.sin(0.3 * t + 4) * 20 + 80;
+                return `rgb(${r}, ${g}, ${b})`;
+            } else {
+                const r = Math.sin(0.3 * t) * 30 + 100;
+                const g = Math.sin(0.3 * t + 2) * 30 + 150;
+                const b = Math.sin(0.3 * t + 4) * 30 + 220;
+                return `rgb(${r}, ${g}, ${b})`;
+            }
+        }
+
+        function drawWave() {
+            ctx.fillStyle = isDarkMode ? '#1a1a1a' : '#87CEEB';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.beginPath();
+            ctx.moveTo(0, canvas.height);
+            for (let x = 0; x < canvas.width; x++) {
+                const y = wave.y + Math.sin(x * wave.length + time) * wave.amplitude;
+                ctx.lineTo(x, y);
+            }
+            ctx.lineTo(canvas.width, canvas.height);
+            ctx.closePath();
+
+            const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+            gradient.addColorStop(0, getGradient(time, isDarkMode));
+            gradient.addColorStop(1, getGradient(time + Math.PI, isDarkMode));
+            ctx.fillStyle = gradient;
+            ctx.fill();
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            drawWave();
+            time += wave.frequency;
+            requestAnimationFrame(animate);
+        }
+
+        function updateColors() {
+            content.style.background = isDarkMode 
+                ? 'linear-gradient(to bottom, #1a1a1a, #0d0d0d, #000000)'
+                : 'linear-gradient(to bottom, #87CEEB, #0077BE, #003366)';
+            title.style.color = isDarkMode ? '#ffffff' : '#000000';
+            tagline.style.color = isDarkMode ? '#cccccc' : '#333333';
+            modeToggle.style.backgroundColor = isDarkMode ? 'rgba(255, 255, 255, 0.7)' : 'rgba(255, 255, 255, 0.7)';
+            modeToggle.style.color = isDarkMode ? 'black' : 'black';
+        }
+
+        function createBubbles() {
+            const bubbleCount = 20;
+            for (let i = 0; i < bubbleCount; i++) {
+                const bubble = document.createElement('div');
+                bubble.classList.add('bubble');
+                bubble.style.left = `${Math.random() * 100}%`;
+                bubble.style.width = `${Math.random() * 20 + 10}px`;
+                bubble.style.height = bubble.style.width;
+                bubble.style.animationDelay = `${Math.random() * 15}s`;
+                content.appendChild(bubble);
+            }
+        }
+
+        modeToggle.addEventListener('click', () => {
+            isDarkMode = !isDarkMode;
+            modeToggle.textContent = isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode';
+            updateColors();
+        });
+
+        window.addEventListener('resize', resizeCanvas);
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            title.style.opacity = 1 - scrollY / window.innerHeight;
+            tagline.style.opacity = 1 - scrollY / window.innerHeight;
+        });
+
+        resizeCanvas();
+        updateColors();
+        animate();
+        createBubbles();
+    </script>
+</body>
+</html>

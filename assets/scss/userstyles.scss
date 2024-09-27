@@ -1,14 +1,22 @@
 // /* Use the font config as variables in your SCSS */
 // // from https://gist.github.com/jeremybise/a6afea2d4c7f9044180ffeb663a617cf
 
-$font-heading: 'Poppins', sans-serif;
-$font-body: 'Poppins', sans-serif ;
+$font-all: 'Poppins', serif;
+// $font-heading: 'Poppins', sans-serif;
+// $font-body: 'Poppins', sans-serif ;
 
 body {
-  font-family: $font-body;
+  font-family: $font-all;
 }
 
 h1, h2, h3, h4, h5, h6 {
- font-family: $font-heading; 
+ font-family: $font-all; 
 }
 
+#home-subtitle {
+  font-family: $font-all;
+}
+
+#home-footer{
+  font-family: $font-all;
+}
