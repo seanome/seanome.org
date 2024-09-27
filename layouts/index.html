@@ -1,0 +1,27 @@
+{{ define "head" }}
+	<script src="/js/wave_animation.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="css/wave_animation.css">
+{{ end }}
+
+{{ define "main" }}
+
+	<div id="spotlight" class="animated fadeIn">
+		<div id="home-center">
+			<h1 id="home-title">{{ .Site.Title }}</h1>
+			{{- with .Site.Params.homeSubtitle }}
+			<p id="home-subtitle">{{.}}</p>
+			{{- end }}
+			{{- with .Site.Params.socialLinks }}
+			<div id="home-social">
+				{{ partialCached "social-icons.html" . }}
+			</div>
+			{{- end }}
+			<nav id="home-nav" class="site-nav">
+				{{ partialCached "menu.html" . }}
+			</nav>
+		</div>
+		<canvas id="waveCanvas"></canvas>
+		<button id="modeToggle">☀️</button>
+		<div id="home-footer">{{ partialCached "single-footer.html" . }}</div>
+	</div>
+{{ end }}
