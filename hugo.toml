@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'Seanome'
 theme = 'hermit-v2'
 [params]
-  homeSubtitle = "Unlocking cures from ocean biodiversity with open genomics tools"
+  homeSubtitle = "Unlocking cures from ocean biodiversity"
   homeSubtitlePrinter = true
   [params.contact]
     email = 'info@seanome.org'
