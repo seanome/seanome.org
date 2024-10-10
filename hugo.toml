@@ -3,25 +3,28 @@ languageCode = 'en-us'
 title = 'Seanome'
 theme = 'hermit-v2'
 [params]
-  homeSubtitle = "Unlocking cures from ocean biodiversity"
-  homeSubtitlePrinter = true
-  [params.contact]
-    email = 'info@seanome.org'
-  custom_css = ["scss/userstyles.scss"]
-  google_fonts = [
-    ["Poppins", "400, 700"],
-    ["Lato", "400, 700"],
-    ["Josefin Sans", "400, 700"],
-  ]
-
+homeSubtitle = "Unlocking breakthroughs from ocean biodiversity"
+homeSubtitlePrinter = true
+[params.contact]
+email = 'info@seanome.org'
+custom_css = ["scss/userstyles.scss"]
+google_fonts = [
+  [
+    "Poppins",
+    "400, 700",
+  ],
+  [
+    "Lato",
+    "400, 700",
+  ],
+  [
+    "Josefin Sans",
+    "400, 700",
+  ],
+]
 
 
 [params.author]
-  name = "Seanome"
+name = "Seanome"
 
-features = [
-  "single column",
-  "social icons",
-  "google analytics",
-  "customizable"
-]
+features = ["single column", "social icons", "google analytics", "customizable"]
