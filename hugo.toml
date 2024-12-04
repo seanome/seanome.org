@@ -2,29 +2,72 @@ baseURL = 'https://seanome.org/'
 languageCode = 'en-us'
 title = 'Seanome'
 theme = 'hermit-v2'
+
 [params]
 homeSubtitle = "Unlocking breakthroughs from ocean biodiversity"
 homeSubtitlePrinter = true
+
+code_copy_button = true
+google_fonts = [
+  [
+    "Cinzel Decorative",
+    "300, 400, 700",
+  ],
+  [
+    "Inconsolata",
+    "300, 400, 700",
+  ],
+  [
+    "Alegreya Sans",
+
+    "300, 400, 700",
+
+  ],
+]
+
 [params.contact]
 email = 'info@seanome.org'
 custom_css = ["scss/userstyles.scss"]
-google_fonts = [
-  [
-    "Poppins",
-    "400, 700",
-  ],
-  [
-    "Lato",
-    "400, 700",
-  ],
-  [
-    "Josefin Sans",
-    "400, 700",
-  ],
-]
+
+
+[[params.socialLinks]]
+name = 'github'
+url = 'https://github.com/seanome'
+
+[[params.socialLinks]]
+name = 'x'
+url = 'https://x.com/SeanomeSF'
+
+
+[[params.socialLinks]]
+name = 'bluesky'
+url = 'https://bluesky.com/Seanome'
+
+
+[[params.socialLinks]]
+name = 'substack'
+url = 'https://seanome.substack.com/'
+
+
+# [[params.socialLinks]]
+# name = 'wavebywave-substack'
+# url = 'https://wavebywave.substack.com/'
 
 
 [params.author]
 name = "Seanome"
 
 features = ["single column", "social icons", "google analytics", "customizable"]
+
+
+# [menu]
+
+# [[menu.main]]
+# name = "Substack"
+# url = "https://seanome.substack.com/"
+# weight = 10
+
+# [[menu.main]]
+# name = "About"
+# url = "about-hugo/"
+# weight = 20
