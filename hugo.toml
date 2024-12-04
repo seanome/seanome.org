@@ -47,7 +47,12 @@ url = 'https://bluesky.com/Seanome'
 [[params.socialLinks]]
 name = 'substack'
 url = 'https://seanome.substack.com/'
-svg = "svg/substack-reader-svgrepo-com.svg"
+
+
+# [[params.socialLinks]]
+# name = 'wavebywave-substack'
+# url = 'https://wavebywave.substack.com/'
+
 
 [params.author]
 name = "Seanome"
