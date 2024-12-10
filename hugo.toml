@@ -42,6 +42,10 @@ url = 'https://x.com/SeanomeSF'
 name = 'bluesky'
 url = 'https://bsky.app/profile/seanome.bsky.social'
 
+[[params.socialLinks]]
+name = 'linkedin'
+url = 'https://www.linkedin.com/company/seanome/'
+
 
 [[params.socialLinks]]
 name = 'substack'
