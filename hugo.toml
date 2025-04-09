@@ -14,11 +14,11 @@ google_fonts = [
     "300, 400, 700",
   ],
   [
-    "Inconsolata",
+    "Fira Mono",
     "300, 400, 700",
   ],
   [
-    "Alegreya Sans",
+    "Fira Sans",
 
     "300, 400, 700",
 
@@ -63,14 +63,14 @@ name = "Seanome"
 features = ["single column", "social icons", "google analytics", "customizable"]
 
 
-# [menu]
+[menu]
 
-# [[menu.main]]
-# name = "Substack"
-# url = "https://seanome.substack.com/"
-# weight = 10
+[[menu.main]]
+name = "Substack Blog"
+url = "https://seanome.substack.com/"
+weight = 10
 
-# [[menu.main]]
-# name = "About"
-# url = "about-hugo/"
-# weight = 20
+[[menu.main]]
+name = "About"
+url = "about/"
+weight = 20
