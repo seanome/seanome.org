@@ -70,7 +70,7 @@ name = "Substack Blog"
 url = "https://seanome.substack.com/"
 weight = 10
 
-[[menu.main]]
-name = "About"
-url = "about/"
-weight = 20
+# [[menu.main]]
+# name = "About"
+# url = "about/"
+# weight = 20
