@@ -78,6 +78,15 @@ footer {
     color: var(--color-teal-soft);
 }
 
+code {
+    background-color: initial !important;
+    /* Mid Teal for code blocks */
+    color: var(--color-teal-soft) !important;
+    /* Pale Aqua for code text */
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
 .future-applications {
     display: flex;
     flex-direction: column;
