@@ -10,7 +10,7 @@ role: "Founder & CEO"
 organization: Seanome
 sort_order: 0
 bio:
-    "Doing tecbhio since before it was cool. 20+ papers, 10,000+ citations. MIT, Broad Institute, CZ Biohub, Arcadia, Bridge Bio."
+    "Doing tecbhio since before it was cool. 20+ papers, 10,000+ citations. MIT, Broad Institute, CZ Biohub, Arcadia, Bridge Bio"
 avatar: "olga.jpeg"
 ---
 

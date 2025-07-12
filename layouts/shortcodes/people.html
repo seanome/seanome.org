@@ -19,7 +19,7 @@
 
 {{ if gt (len $people) 0 }}
 <section class="people-group">
-    <h2 style="text-align: center; margin-top: 2rem;">{{ $group }}</h2>
+    <h3 style="text-align: center; margin-top: 2rem;">{{ $group }}</h3>
     <div class="people-section">
         {{ range $people }}
         <div class="person-card">
@@ -27,10 +27,11 @@
             {{ $avatar := .Params.avatar }}
             <img src='{{ "/media/people/" | relURL }}{{ $avatar }}' alt="{{ $name }}" width="150" height="150"
                 style="border-radius: 50%;">
-            <h3>{{ $name }}</h3>
+            <h4>{{ $name }}</h4>
             {{ with .Params.role }}<p><em>{{ . }}</em></p>{{ end }}
             {{ with .Params.bio }}<p>{{ . }}</p>{{ end }}
             <p>
+                {{ with .Params.social.lab_website }}<a href="{{ . }}" target="_blank">Lab Website</a>{{ end }}
                 {{ with .Params.social.linkedin }}<a href="{{ . }}" target="_blank">LinkedIn</a>{{ end }}
                 {{ with .Params.social.github }} • <a href="{{ . }}" target="_blank">GitHub</a>{{ end }}
                 {{ with .Params.social.twitter }} • <a href="https://twitter.com/{{ . }}" target="_blank">Twitter</a>{{
