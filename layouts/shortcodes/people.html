@@ -13,10 +13,8 @@
 {{ end }}
 {{ end }}
 
-{{ $filtered = sort $filtered "Params.sort_order" "asc" }}
-{{ if not $ascending }}
-{{ $filtered = sort $filtered "Params.sort_order" "desc" }}
-{{ end }}
+{{ $filtered = sort $filtered "Params.sort_order" }}
+
 
 <!-- {{/* Uncomment the following lines to reverse the order if not ascending */}} -->
 
