@@ -1,0 +1,50 @@
+{{/* Hugo Shortcode: Show people from user_groups */}}
+
+{{ $groups := split (.Get "groups") "," }}
+{{ $sortKey := default "sort_order" (.Get "sort_by") }}
+{{ $ascending := eq (.Get "ascending") "true" }}
+
+{{ $authors := where site.RegularPages "Section" "authors" }}
+{{ $filtered := slice }}
+
+{{ range $authors }}
+{{ if intersect .Params.user_groups $groups | len }}
+{{ $filtered = $filtered | append . }}
+{{ end }}
+{{ end }}
+
+{{ $filtered = sort $filtered "Params.sort_order" "asc" }}
+{{ if not $ascending }}
+{{ $filtered = sort $filtered "Params.sort_order" "desc" }}
+{{ end }}
+
+<!-- {{/* Uncomment the following lines to reverse the order if not ascending */}} -->
+
+<!-- {{ if not $ascending }}
+{{ $reversed := slice }}
+{{ range last (len $filtered) $filtered }}
+{{ $reversed = $reversed | append . }}
+{{ end }}
+{{ $filtered = $reversed }}
+{{ end }}
+ -->
+
+<div class="people-section">
+    {{ range $filtered }}
+    <div class="person-card">
+        {{ $name := .Params.name }}
+        {{ $avatar := .Params.avatar }}
+        <img src='{{ "/media/people/" | relURL }}{{ $avatar }}' alt='{{ $name }}' width='150' height='150'
+            style='border-radius: 50%;'>
+        <h3>{{ $name }}</h3>
+        {{ with .Params.role }}<p>{{ . }}</p>{{ end }}
+        {{ with .Params.bio }}<p>{{ . }}</p>{{ end }}
+        <p>
+            {{ with .Params.social.linkedin }}<a href="{{ . }}" target="_blank">LinkedIn</a>{{ end }}
+            {{ with .Params.social.github }} • <a href="{{ . }}" target="_blank">GitHub</a>{{ end }}
+            {{ with .Params.social.twitter }} • <a href="https://twitter.com/{{ . }}" target="_blank">Twitter</a>{{ end
+            }}
+        </p>
+    </div>
+    {{ end }}
+</div>

@@ -1,0 +1,36 @@
+.people-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.person-card {
+    flex: 0 1 200px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.person-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.75rem;
+}
+
+.person-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+    color: #fff;
+}
+
+.person-card p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* body {
+    background: #ffefd5;
+} */

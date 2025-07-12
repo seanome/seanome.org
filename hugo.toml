@@ -7,6 +7,10 @@ theme = 'hermit-v2'
 homeSubtitle = "Unlocking breakthroughs from ocean biodiversity"
 homeSubtitlePrinter = true
 
+dateformShort = "Jan 2, 2006"
+dateformLong = "Monday, January 2, 2006"
+dateformShortWithTime = "Jan 2, 2006 3:04 PM"
+
 code_copy_button = true
 google_fonts = [
   [
@@ -25,9 +29,11 @@ google_fonts = [
   ],
 ]
 
+custom_css = ["css/custom.css"]
+
+
 [params.contact]
 email = 'info@seanome.org'
-custom_css = ["scss/userstyles.scss"]
 
 
 [[params.socialLinks]]
@@ -70,7 +76,7 @@ name = "Substack Blog"
 url = "https://seanome.substack.com/"
 weight = 10
 
-# [[menu.main]]
-# name = "About"
-# url = "about/"
-# weight = 20
+[[menu.main]]
+name = "About"
+url = "about/"
+weight = 20
