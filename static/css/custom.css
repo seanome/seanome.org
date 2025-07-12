@@ -47,6 +47,7 @@ body {
     /* Dark Marine */
     color: var(--color-teal-light);
     /* Pale Aqua for body text */
+    font-family: "Fira Sans";
 }
 
 /* Headings */
@@ -75,6 +76,15 @@ a:hover {
 /* Footer text */
 footer {
     color: var(--color-teal-soft);
+}
+
+.future-applications {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 3rem auto;
+    max-width: 1200px;
 }
 
 
@@ -120,4 +130,39 @@ footer {
     text-align: center;
     margin: 3rem 0 2rem;
     letter-spacing: 1px;
+}
+
+.future-applications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.future-applications-card {
+    background-color: var(--color-night-sky);
+    /* Seanome Blue */
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.future-applications-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.future-applications-card h3 {
+    color: var(--color-teal-soft);
+    /* Ocean Teal */
+    margin-bottom: 0.5rem;
+}
+
+.future-applications-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
