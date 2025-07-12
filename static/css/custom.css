@@ -1,36 +1,123 @@
+/* === SEANOME BRAND COLORS === */
+:root {
+    --color-primary: #1d3d75;
+    /* Seanome Blue */
+    --color-teal-dark: #18495A;
+    /* Dark Marine */
+    --color-teal: #206E82;
+    /* Deep Teal */
+    --color-ocean: #45B1A8;
+    /* Ocean Teal */
+    --color-teal-soft: #89C2BA;
+    /* Soft Teal */
+    --color-teal-light: #D4E6E4;
+    /* Pale Aqua */
+    --color-teal-mid: #2D7A8F;
+    /* Mid Teal */
+    --color-rose: #C4A5B5;
+    /* Dusty Rose */
+    --color-gold: #BFA065;
+    /* Antique Gold */
+    --color-purple: #8B7A9F;
+    /* Muted Purple */
+
+    --color-dark-blue: #0b5394;
+
+    --color-light-blue: #3d85c6;
+
+    --color-night-sky: #001a46;
+}
+
+/* So that the top is not a stupid grey */
+html {
+    background-color: var(--color-teal-dark) !important;
+}
+
+#site-header {
+    background-color: var(--color-teal) !important;
+    box-shadow: none !important;
+    /* Seanome Blue */
+    color: var(--color-teal-light);
+    /* Pale Aqua for header text */
+}
+
+/* === BACKGROUND & TEXT === */
+body {
+    background-color: var(--color-teal-dark);
+    /* Dark Marine */
+    color: var(--color-teal-light);
+    /* Pale Aqua for body text */
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-teal-soft);
+    /* Deep Teal for headings */
+}
+
+/* Links */
+a {
+    color: var(--color-ocean);
+    /* Ocean Teal */
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-gold);
+    /* Antique Gold for hover */
+}
+
+/* Footer text */
+footer {
+    color: var(--color-teal-soft);
+}
+
+
+
 .people-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
-    margin-top: 2rem;
+    gap: 3rem;
+    margin: 3rem auto;
+    max-width: 1200px;
 }
 
 .person-card {
-    flex: 0 1 200px;
+    flex: 0 1 220px;
+    /* Wider person cards */
     text-align: center;
     padding: 1rem;
 }
 
 .person-card img {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 0.75rem;
 }
 
 .person-card h3 {
-    font-size: 1.1rem;
-    margin-bottom: 0.2rem;
+    font-size: 1.15rem;
+    margin-bottom: 0.3rem;
     color: #fff;
 }
 
 .person-card p {
     font-size: 0.9rem;
     color: #ccc;
+    line-height: 1.4;
 }
 
-/* body {
-    background: #ffefd5;
-} */
+.people-group h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 3rem 0 2rem;
+    letter-spacing: 1px;
+}
