@@ -7,6 +7,6 @@
 	{{- end -}}
 </span>
 {{- else -}}
-<div><a href="{{ .URL | absLangURL }}">{{ .Name }}</a></div>
+<div><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></div>
 {{- end -}}
 {{- end -}}
