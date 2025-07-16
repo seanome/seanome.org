@@ -11,20 +11,25 @@ type: landing
 
 Seanome builds open-source software to figure out how the genes of weird animals in the ocean can help us live longer, healthier, and more sustainable lives. 
 
+### Who we are 
+
+Seanome is a community-focused research organization building scalable, open-source tools to decode the vast genetic potential of our oceans. Founded by computational biologist Dr. Olga Botvinnik, we are revolutionizing how scientists understand and harness marine biodiversity.
+
 ### Mission
 
-> Our mission is to unlock breakthroughs from ocean biodiversity by building open genomics tools
+> We build open tools to characterize the “forgotten 99%” of marine genetic diversity, unlocking breakthroughs that can heal, nourish, and renew life on Earth.
+
 
 Biodiversity brought us breakthroughs like [Ozempic](https://en.wikipedia.org/wiki/Semaglutide) (derived from [lizard venom](https://medicine.uq.edu.au/article/2024/04/rise-ozempic-how-surprise-discoveries-and-lizard-venom-led-new-class-weight-loss-drugs)) and [anti-HIV and anti-cancer compounds](https://ocean.si.edu/ocean-life/invertebrates/sea-sponge-hiv-medicine) from a single innovative organism, [ancient sea sponges](https://en.wikipedia.org/wiki/Tectitethya_crypta), are a tiny glimpse of what’s possible when we start to dive into the ocean's depths. These discoveries come from a handful of species representing a tiny fraction of Earth’s biodiversity. We’ve only begun to explore nature’s 4 billion years of experiments.
 
 ### Vision
 
-> Our vision is to open-source the code of life, empowering humanity’s transformation to a world guided by nature's ancient wisdom
+> Our vision is to open-source the code of life, empowering humanity’s transformation to a world guided by nature's ancient wisdom.
 
 
 ![](/media/midjourney/future-city.png)
 
-Imagine a world where we drive cars (maybe self-driving?) out of seashells, our homes are built from from tree- and coral-inspired materials filtering our air and water for us, and disease is eliminated because we know how nature has solved every molecular problem. We see a future where given any problem, we ask, how has nature already solved this problem? How has nature already solved this disease? How has nature created strong materials that withstand the test of time and eliminate the need for landfills?
+Imagine a world where we drive cars (maybe self-driving?) out of seashells, our homes are built from tree- and coral-inspired materials filtering our air and water for us, and disease is eliminated because we know how nature has solved every molecular problem. We see a future where given any problem, we ask, how has nature already solved this problem? How has nature already solved this disease? How has nature created strong materials that withstand the test of time and eliminate the need for landfills?
 
 
 ## Why the Ocean?
@@ -93,3 +98,8 @@ An astounding 14 quadrillion potential proteins exist in the world. Scientists h
 ## Leadership
 
 {{< people groups="Board of Directors,Scientific Advisory Board" sort_by="sort_order" ascending="true" >}}
+
+<center>
+*Seanome: Open-sourcing life’s code, one wave at a time.*
+</center>
+
