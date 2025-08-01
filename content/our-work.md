@@ -19,7 +19,7 @@ An astounding 14 quadrillion potential proteins exist in the world. Scientists h
 
 ### Initial Application: Arctic Clams
 
-[Arctic clams](https://blog.seanome.org/p/curing-diseases-with-arctic-clams) have already solved multiple human problems: they can live for hundreds of years, regenerate their shells (if we could regenerate our skulls and spine like clams, we could add 5-15 years of healthy human life), and outsmarted a chronic nerve pain disease (neuropathy) affecting ~20 million people in the US+EU, a $93.9B/yr market.
+Seanome is first applying Kmerseek to [Arctic clams](https://blog.seanome.org/p/curing-diseases-with-arctic-clams), which have already solved multiple human problems: they can live for hundreds of years, regenerate their shells (if we could regenerate our skulls and spine like clams, we could add 5-15 years of healthy human life), and outsmarted a chronic nerve pain disease (neuropathy) affecting ~20 million people in the US+EU, a $93.9B/yr market.
 
 ## Future Applications
 
@@ -53,13 +53,8 @@ An astounding 14 quadrillion potential proteins exist in the world. Scientists h
 
 {{< /future-applications-grid >}}
 
-
-
-## Leadership
-
-{{< people groups="Board of Directors,Scientific Advisory Board" sort_by="sort_order" ascending="true" >}}
-
 <center>
 *Seanome: Open-sourcing life’s code, one wave at a time.*
 </center>
+
 
