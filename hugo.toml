@@ -92,3 +92,9 @@ weight = 20
 name = "Team"
 url = "team/"
 weight = 20
+
+
+[[menu.main]]
+name = "Why the Ocean?"
+url = "why-ocean/"
+weight = 20
