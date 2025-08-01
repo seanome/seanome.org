@@ -1,5 +1,7 @@
-About
-
+---
+title: About
+type: landing
+---
 
 
 ## Our Why
