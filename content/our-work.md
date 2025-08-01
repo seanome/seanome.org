@@ -11,11 +11,11 @@ At Seanome, we build open-source software to annotate proteins of unknown functi
 
 ### [Kmerseek](https://github.com/seanome/kmerseek/): A blazing-fast protein function predictor
 
-Seanome's Kmerseek bridges the evolutionary gap between marine and human genomes. By creating an alternative biochemical latent space and speeding up computation ~1000x, Kmerseek finds similarities between proteins that other tools don't see.
+Seanome's Kmerseek bridges the evolutionary gap between marine and human genomes. By using novel computational methods that speed up analysis ~1000x and allow us to compare proteins across vastly different species, Kmerseek finds similarities between proteins that other tools can’t see.
 
 ### [nf-core/proteinannotator](https://github.com/nf-core/proteinannotator): The best protein annotation pipeline in the world
 
-An astounding 14 quadrillion potential proteins exist in the world. Scientists have functionally annotated ~500,000 of those proteins in UniProtKB through exceptional manual effort. However, these annotations are biased toward well-studied organisms, undersampling billions of species. Manual curation cannot realistically annotate all proteins on the scale of the Earth, and at Seanome, our vision is to create the best protein annotator for any organism. As no tool will perfectly annotate all proteins, we’re building the `nf-core/proteinannotator` pipeline as a “wisdom of crowds” approach across methods like DIAMOND-blastp, InterProScan, HMMer, FoldSeek, and emerging tools like Kmerseek. This work aims to support the broader scientific community's efforts to catalog and understand global biodiversity through large-scale sequencing projects.
+An astounding 14 quadrillion potential proteins exist in the world. Scientists have functionally annotated ~500,000 of those proteins in UniProtKB through exceptional manual effort. However, these annotations are biased toward well-studied organisms, undersampling billions of species. Manual curation cannot realistically annotate all proteins on the scale of the Earth, and at Seanome, our vision is to create the best protein annotator for any organism. As no tool will perfectly annotate all proteins, we’re building the `nf-core/proteinannotator` pipeline as a “wisdom of crowds” approach across methods like DIAMOND-blastp, InterProScan, HMMer, FoldSeek, and emerging tools like Kmerseek. This work supports the broader scientific community's efforts to catalog and understand global biodiversity through large-scale sequencing projects.
 
 ### Initial Application: Arctic Clams
 
