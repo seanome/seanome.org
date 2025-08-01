@@ -80,3 +80,15 @@ weight = 10
 name = "About"
 url = "about/"
 weight = 20
+
+
+[[menu.main]]
+name = "Our Work"
+url = "our-work/"
+weight = 20
+
+
+[[menu.main]]
+name = "Team"
+url = "team/"
+weight = 20
