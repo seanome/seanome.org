@@ -21,3 +21,7 @@ Seanome focuses on ocean animals (rather than microbes) because of the emergent 
 ## Why Nonprofit?
 
 We’re nonprofit and open-source to make science better for everyone. If we make products that only well-financed pharma companies can afford, we’re not expanding the opportunity space enough to transformationally change the world by democratizing access to innovation. Fundamentally, we need to build (and maintain!) open-source tools to enable the most innovation. We can make the tools that enable the most people to create all the patents, medicines, and materials the world needs from the quadrillions of unknown proteins in the world.
+
+<center>
+*Seanome: Open-sourcing life’s code, one wave at a time.*
+</center>
