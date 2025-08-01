@@ -4,7 +4,7 @@ title: Team
 type: landing
 ---
 
-Seanome is led by luminary 
+Seanome is led by luminary builders, scientists, and engineers actively creating the abundant future.
 
 ## Leadership
 
