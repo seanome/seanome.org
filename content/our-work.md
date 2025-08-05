@@ -29,7 +29,7 @@ Seanome is first applying Kmerseek to [Arctic clams](https://blog.seanome.org/p
 <div class="future-applications-card">
   <!-- <img src="/media/applications/health.jpg" alt="Health"> -->
   <h3>Health</h3>
-  <p>The next cure for cancer is swimming in the ocean — where we've explored less than 1% of species for medicines, missing solutions like Arctic clams naturally tolerating neurotoxins causing human disease. Seanome unlocks nature’s 4 billion year old pharmacy, democratizing access and empowering scientists worldwide to accelerate the discovery of breakthrough therapies for cancer, neurodegeneration, antibiotic resistance, and beyond.</p>
+  <p>The next cure for cancer is swimming in the ocean: where we've explored less than 1% of species for medicines, missing solutions like Arctic clams naturally tolerating neurotoxins causing human disease. Seanome unlocks nature’s 4 billion year old pharmacy, democratizing access and empowering scientists worldwide to accelerate the discovery of breakthrough therapies for cancer, neurodegeneration, antibiotic resistance, and beyond.</p>
 </div>
 
 <div class="future-applications-card">

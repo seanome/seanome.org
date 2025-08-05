@@ -18,10 +18,6 @@ Seanome focuses on ocean animals (rather than microbes) because of the emergent 
 
 43 billion animal genes, yet we only understand what ~8000 of them do (see analysis at [seanome/2025-biodata-wealth-inequality](https://github.com/seanome/2025-biodata-wealth-inequality)). Of these, 13 FDA-approved drugs worth $8.4B have been identified, including [anti-HIV and anti-cancer compounds](https://ocean.si.edu/ocean-life/invertebrates/sea-sponge-hiv-medicine) developed from naturally-occurring compounds discovered in an [ancient sea sponge (*Tectitethya crypta*)](https://en.wikipedia.org/wiki/Tectitethya_crypta).
 
-## Why Nonprofit?
-
-We’re nonprofit and open-source to make science better for everyone. If we make products that only well-financed pharma companies can afford, we’re not expanding the opportunity space enough to transformationally change the world by democratizing access to innovation. Fundamentally, we need to build (and maintain!) open-source tools to enable the most innovation. We can make the tools that enable the most people to create all the patents, medicines, and materials the world needs from the quadrillions of unknown proteins in the world.
-
 <center>
 *Seanome: Open-sourcing life’s code, one wave at a time.*
 </center>
