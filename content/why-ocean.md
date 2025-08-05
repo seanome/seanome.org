@@ -12,7 +12,7 @@ The ocean is home to [~80% of animal life](https://www.pnas.org/doi/full/10.1073
 
 *Microbes are single-family homes; animals are bustling cities.*
 
-Seanome focuses on ocean animals (rather than microbes) because of the emergent properties in complex organ systems. Animal bodies are like cities, requiring municipal-wide waste management (lymphatic system), communication mechanisms (nervous system), and defense (immune system), while microbes are like single-family homes. Studying octopus brains, clam shells, and jellyfish neurons reveals *systems‑level* blueprints for regeneration, longevity, and materials science that single‑cell life can’t teach us.
+Seanome focuses on ocean animals (rather than microbes) because of the emergent properties in complex organ systems. Animal bodies are like cities, requiring municipal-wide waste management (lymphatic system), communication mechanisms (nervous system), and defense (immune system), while microbes are like single-family homes. Studying octopus brains, clam shells, and jellyfish neurons reveals *systems‑level* blueprints for regeneration, longevity, and materials science that single‑celled life alone can’t teach us.
 
 ### An untapped trillion-dollar frontier
 
