@@ -6,7 +6,8 @@ $font-heading: 'Cinzel Decorative', serif;
 $font-body: 'Fira Sans', sans-serif;
 
 body {
-  font-family: $font-body;
+  font-family: "Fira Sans", sans-serif !important;
+  font-weight: 300;
 }
 
 h1,
@@ -24,6 +25,7 @@ h6 {
 
 #home-footer {
   font-family: $font-subtitle;
+  font-size: 14px !important;
 }
 
 

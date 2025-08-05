@@ -1,109 +1,33 @@
-
 ---
-title: Meet the Team
+title: About
 type: landing
-
-sections:
-  - block: people
-    content:
-      title: Meet the Team
-      # Choose which groups/teams of users to display.
-      #   Edit `user_groups` in each user's profile to add them to one or more of these groups.
-      user_groups:
-        - Principal Investigators
-        - Researchers
-        - Grad Students
-        - Administration
-        - Visitors
-        - Alumni
-      sort_by: Params.last_name
-      sort_ascending: true
-    design:
-      # Show user's social networking links? (true/false)
-      show_social: false
-      # Show user's interests? (true/false)
-      show_interests: true
-      # Show user's role?
-      show_role: true
-      # Show user's organizations/affiliations?
-      show_organizations: true
 ---
 
 
-# Seanome: Unlocking the Ocean's Genetic Code
+## Our Why
 
-## Who We Are
+### Vision
 
-Seanome is a community-focused research organization building scalable, open-source tools to decode the vast genetic potential of our oceans. Founded by computational biologist Dr. Olga Botvinnik, we are revolutionizing how scientists understand and harness marine biodiversity.
+> Our vision is to open-source the code of life, empowering humanity’s transformation to a world guided by nature’s ancient wisdom.
 
-## Our Mission
+![](/media/midjourney/future-city.png)
 
-We build open tools to characterize the "forgotten 99%" of marine genetic diversity, unlocking breakthrough discoveries that can heal, nourish, and renew life on Earth.
+Imagine a world where cars are made of seashells, homes use tree- and coral-inspired materials to clean air and water, and we've eliminated disease because we understand nature has solved every molecular problem. We see a future where, given any problem, we ask how nature has already solved this problem? How has nature already solved this disease?
 
-## Why the Ocean?
+### Mission
 
-The ocean represents Earth's greatest untapped genetic repository:
+> We build open tools to characterize the “forgotten 99%” of marine genetic diversity, unlocking breakthroughs to heal, nourish, and renew life on Earth.
 
-- Home to 70% of all animal phyla, evolved over 4 billion years
-- Contains extraordinary biodiversity with innovative body plans, immune systems, and molecular mechanisms
-- Faces unprecedented evolutionary pressures (a single teaspoon of seawater harbors 100 million viruses!)
-- Remains vastly unexplored, with up to 90% of ocean species still undescribed
+Biodiversity brought us breakthroughs like [Ozempic](https://en.wikipedia.org/wiki/Semaglutide) (derived from [lizard venom](https://medicine.uq.edu.au/article/2024/04/rise-ozempic-how-surprise-discoveries-and-lizard-venom-led-new-class-weight-loss-drugs)) and [anti-HIV and anti-cancer compounds](https://ocean.si.edu/ocean-life/invertebrates/sea-sponge-hiv-medicine) from a [ancient sea sponges](https://en.wikipedia.org/wiki/Tectitethya_crypta) providing a glimpse of what’s possible when we start to dive into the ocean’s depths. These discoveries come from a handful of species representing a tiny fraction of Earth’s biodiversity. We’ve only begun to explore nature’s 4 billion years of experiments.
 
-## Our Approach
+### Who we are 
 
-### Technical Innovation
+Seanome is a nonprofit, focused research organization (FRO) building scalable, open-source tools to decode the vast genetic potential of our oceans. Founded by computational biologist [Dr. Olga Botvinnik](https://olgabotvinnik.com/), we are revolutionizing how scientists understand and harness marine biodiversity.
 
-We're developing computational frameworks that reveal hidden patterns in marine genomes where traditional tools reach their limits:
+## Why Nonprofit?
 
-- Creating algorithms to identify functional relationships between proteins with low sequence similarity
-- Building scalable, low-resource tools accessible to researchers worldwide
-- Combining biochemical data augmentation with AI to characterize previously "unsolvable" protein sequences
+We’re nonprofit and open-source to make science better for everyone. If we make products that only well-financed pharma companies can afford, we’re not expanding the opportunity space enough to transformationally change the world by democratizing access to innovation. Fundamentally, we need to build (and maintain!) open-source tools to enable the most innovation. We can make the tools that enable the most people to create all the patents, medicines, and materials the world needs from the quadrillions of unknown proteins in the world.
 
-### Open-Source Ecosystem
-
-Our tools are developed in the open, using Nextflow, Python, and Rust to create software that empowers thousands of scientists worldwide:
-
-- Open-source code repositories with active community engagement
-- Comprehensive documentation and tutorials
-- Live-streamed scientific coding sessions to democratize technical knowledge
-
-### Community Engagement
-
-We believe in science that transcends traditional boundaries:
-
-- Partnerships with Indigenous Peoples and Local Communities who have stewarded biodiversity for millennia
-- Citizen science initiatives that expand participation in marine genomics
-- Immersive science-dance events that communicate marine research through both cerebral and embodied forms
-
-## Our Impact
-
-Seanome is creating tangible breakthroughs across multiple domains:
-
-- **Medicine**: Identifying marine proteins with potential to transform therapeutic approaches
-- **Climate Solutions**: Understanding cellular adaptations that could inform environmental technologies
-- **Agriculture**: Uncovering novel biological systems for sustainable food production
-- **Scientific Infrastructure**: Building the computational foundation for the next generation of biodiversity research
-
-## Current Projects
-
-From arctic clams that tolerate neurotoxins to ancient marine animals with unique immune systems, we're exploring the frontier of molecular biodiversity:
-
-- Identifying deeply conserved protein structures between ancient marine creatures and humans
-- Characterizing proteins found only in rare human diseases and specific marine organisms
-- Developing evolutionary analyses that detect structural homology at unprecedented evolutionary distances
-
-## Join Our Journey
-
-Whether you're a scientist, developer, naturalist, or simply ocean-curious, we invite you to join us in unlocking the genetic potential of our planet's greatest biodiversity repository.
-
-- Follow our research journey
-- Contribute to our open-source projects
-- Participate in our community events
-- Support our mission
-
-Together, we'll transform marine genomics through accessible, collaborative technology that serves the forgotten 99% of ocean biodiversity, citizen scientists, and human ecological knowledge.
-
-*Seanome: Open-sourcing life's code, one wave at a time.*
-
-
-## 
+<center>
+*Seanome: Open-sourcing life’s code, one wave at a time.*
+</center>
