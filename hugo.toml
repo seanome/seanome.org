@@ -3,6 +3,10 @@ languageCode = 'en-us'
 title = 'Seanome'
 theme = 'hermit-v2'
 
+[services]
+[services.googleAnalytics]
+id = "G-XW6SSFN231"
+
 [params]
 homeSubtitle = "Unlocking breakthroughs from ocean biodiversity"
 homeSubtitlePrinter = true
